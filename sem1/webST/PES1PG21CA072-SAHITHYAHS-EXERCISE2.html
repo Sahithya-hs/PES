@@ -1,0 +1,200 @@
+<html>
+    <title>Student enrollment </title>
+   
+ <style> 
+ .styled-table {
+    border-collapse: collapse;
+   
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.styled-table thead tr {
+    background-color: #3B4371;
+    color: #ffffff;
+    text-align: left;
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+  #form-table {
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(56, 58, 158));
+}
+</style>
+
+
+
+<body>
+<form action="#" name="StudentRegistration" >
+    <center>
+
+<table id="form-table" cellpadding="5" width="40%" height="70%" 
+cellspacing="5">
+<Caption>Fill the Form</Caption>
+
+<tr> 
+<td colspan=3>
+<center><font size=5><b>Student Registration Form</b></font></center>
+</td>
+</tr>
+
+<tr>
+<td> <b>Name</b> </td>
+<td><input type=text name=snames size="40"></td>
+</tr>
+
+<tr>
+<td> <b> Father Name </b></td>
+<td><input type="text" name="fathername" size="40"></td>
+</tr>
+<tr>
+<td><b>Postal Address</b></td>
+<td><input type="text" name="paddress" size="40"></td>
+</tr>
+
+<tr>
+<td><b>Personal Address</b></td>
+<td><input type="text" name="personaladdress" size="40"></td>
+</tr>
+
+<tr>
+<td><b>Gender</b></td>
+<td><input type="radio" name="gender" value="male" size="30">Male
+<input type="radio" name="gender" value="Female" size="30">Female</td>
+</tr>
+
+<tr>
+    <td><b>School </b></td>
+    <td><input type=text name=school size="40"></td>
+</tr>
+<tr>
+    <td><b>10+2 college</b> </td>
+    <td><input type=text name=pucoll size="40"></td>
+</tr>
+<tr>
+    <td><b>UG College </b></td>
+    <td><input type=text name=ugcoll size="40"></td>
+</tr>
+
+
+<tr>
+<td><b>Course</b></td>
+<td><select name="Course">
+<option value="-1" selected>SELECT</option>
+<option value="B.Tech">B.TECH</option>
+<option value="MCA">MCA</option>
+<option value="MBA">MBA</option>
+<option value="BCA">BCA</option>
+</select></td>
+</tr>
+
+
+<tr>
+<td><b>Specialization</b></td>
+<td><select Name="Specialization">
+<option value="-1" selected>SELECT</option>
+<option value="ML">Machine learning</option>
+<option value="AI">Artificial Intelligence</option>
+<option value="DA">Data Analytics</option>
+<option value="CSec">Cyber Security</option>
+</select></td>
+</tr>
+
+
+<tr>
+    <td><b>Date of joining : </b></td>
+    <td><input type="date" name="doj"  size="40"></td>
+    </tr>
+
+
+<tr>
+     <td> <b> Date of course : </b></td>
+    <td><input type="date" name="doc"  size="40"></td>
+     </tr>
+        
+
+<tr>
+<td> <b> EmailId</b></td>
+<td><input type="email" name="emailid"  size="40" placeholder="id@gmail.com"></td>
+</tr>
+
+<tr>
+    <td><b>Previous Achievements</b></td>
+    <td><input type=text name="pachieve" size="40"></td>
+    </tr>
+
+<tr>
+    <td><b>Interested Sport</b></td>
+    <td><select Name="Sport">
+    <option value="-1" selected>SELECT</option>
+    <option value="FootBall">Football</option>
+    <option value="Cricket">Cricket</option>
+    <option value="BasketBall">BasketBall</option>
+    <option value="Badminton">Badminton</option>
+    </select></td>
+    </tr>
+
+<tr>
+<td><b>Date of birth :</b> </td>
+<td><input type="date" name="dob"  size="40"></td>
+</tr>
+
+
+
+<tr>
+<td><b>Phone Number</b></td>
+<td><input type="text" name="phno"  size="40"></td>
+</tr>
+
+<tr>
+    <td><b>Blood Group : </b></td>
+    <td><select name="Course">
+    <option value="-1" selected>SELECT</option>
+    <option value="A+">A+</option>
+    <option value="A-">A-</option>
+    <option value="B+">B+</option>
+    <option value="B-">B-</option>
+    <option value="O+">O+</option>
+    <option value="O-">O-</option>
+    <option value="AB+">AB+</option>
+    <option value="AB-">AB-</option>
+    </select></td>
+    </tr>
+    <br><br>
+    <tr> 
+
+        <table class="styled-table">
+            <thead>
+                <tbody>
+                <tr><th> 10th % </th>
+                    <td> <input type="text" name="tenth"> </td>
+                </tr>         
+                    
+                <tr>
+                    <th> 10+2%  </th>
+                    <td> <input type="text" name="pu"> </td>
+                </tr>
+                <tr><th> UG % </th>
+                    <td> <input type="text" name="ug"> </td>
+                </tr> 
+            </tbody>
+            </thead>
+        
+        </tr>
+        
+    
+<tr>
+<td><input type="reset" value="Reset"></td>
+<td colspan="2"><input type="submit" value="Submit Form" /></td>
+</tr>
+</table>
+</table>
+</center>
+</form>
+</body>
+</html>
