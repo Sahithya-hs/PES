@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Canvas</title>
+    
+    <style>
+        
+        #canvas{
+	
+           	 margin-left: 25%;
+           	 display: block;
+       		}
+    </style>
+</head>
+<body>
+
+    <canvas id="mycanvas" width="700" height="750" style="border: 2px solid black;margin-left: 28% ;"></canvas>
+    <script>
+        var c=document.getElementById("mycanvas");
+        var ctx=c.getContext("2d");
+
+	// canvas1
+
+        ctx.font="20px tahoma";
+        ctx.fillText("1.",5,17);
+        
+	ctx.lineWidth= 1;
+	ctx.strokeStyle = "red";
+        ctx.strokeRect(20,30,100,80)
+        ctx.lineWidth=7;
+        ctx.strokeStyle="blue";
+        ctx.strokeRect(70,90,100,50)
+        ctx.lineWidth=12;
+        ctx.strokeStyle="green";
+        ctx.strokeRect(100,40,50,80)
+
+	// canvas2
+
+       ctx.font="20px tahoma";
+       ctx.fillText("2.",330,17);
+       ctx.fillText("Testing Canvas",350,17);
+       ctx.fillStyle= "#83FF33" ;
+       
+       ctx.fillRect(365,60,80,80);
+       ctx.beginPath();
+	ctx.lineWidth= 1;
+	ctx.strokeStyle = "red";
+        ctx.strokeRect(350,30,330,150)
+
+       ctx.lineWidth= 1;
+    
+       ctx.globalAlpha = 0.4;
+	ctx.moveTo(430, 120);
+       ctx.lineTo(460, 40);
+       ctx.lineTo(500, 120);
+       ctx.closePath();
+       ctx.fillStyle ="purple";
+       ctx.fill();
+
+	ctx.globalAlpha = 1.0;
+
+
+	ctx.beginPath();
+        ctx.arc(510,120,30,0,2*Math.PI);
+        ctx.fillStyle ="red";
+        ctx.fill();
+
+
+	// canvas3
+
+       ctx.font="20px tahoma";
+       ctx.fillStyle="black";
+       ctx.fillText("3.",5,200);
+
+       ctx.fillStyle="blue";
+       ctx.fillRect(90,200,120,40,20)
+
+
+       ctx.fillStyle="yellow";
+       ctx.fillRect(120,300,100,40);
+       
+       ctx.fillStyle="red";
+       ctx.fillRect(180,200,40,100);
+       
+       ctx.fillStyle="green";
+       ctx.fillRect(90,240,40,100);
+       
+       // canvas4
+
+        ctx.font="20px tahoma";
+        ctx.fillStyle="black";
+        ctx.fillText("4.",330,200);
+
+        ctx.strokeStyle = "orange";
+        ctx.lineWidth = 3;
+        ctx.strokeRect(350,200,170,150);
+        var grd = ctx.createLinearGradient(370,0,630,200);
+        grd.addColorStop(0,"orange");
+        grd.addColorStop(0.2,"orange");
+	grd.addColorStop(1,"blue");
+        ctx.fillStyle= grd;
+        ctx.fillRect(360,210,120,80);
+        
+        
+        // canvas5
+        ctx.font="20px tahoma";
+        ctx.fillStyle="black";
+        ctx.fillText("5.",5,380);
+
+        ctx.font="10px tahoma";
+        ctx.fillStyle="black";
+        ctx.fillText("Sales per Year",150,400);
+        
+        ctx.font="7px tahoma";
+        ctx.fillStyle="red";
+        ctx.fillText("250",175,417);
+        ctx.font="7px tahoma";
+        ctx.fillStyle="red";
+        ctx.fillText("2011",175,517);
+
+        ctx.font="7px tahoma";
+        ctx.fillStyle="blue";
+        ctx.fillText("200",145,435);
+        ctx.font="7px tahoma";
+        ctx.fillStyle="blue";
+        ctx.fillText("2010",145,517);
+
+        ctx.font="7px tahoma";
+        ctx.fillStyle="green";
+        ctx.fillText("175",206,445);
+        ctx.font="7px tahoma";
+        ctx.fillStyle="green";
+        ctx.fillText("2012",206,517);
+
+        ctx.strokeStyle = "black";
+        ctx.lineWidth= 1;
+        ctx.strokeRect(90,370,160,160);
+        ctx.moveTo(120,400);
+        ctx.lineTo(120,510);
+        ctx.stroke();
+        ctx.moveTo(120,510);
+        ctx.lineTo(235,510);
+        ctx.stroke();
+
+        ctx.fillStyle= "blue";
+        ctx.fillRect(140,440,20,70);
+        ctx.fillStyle= "red";
+        ctx.fillRect(172,420,20,89);
+        ctx.fillStyle= "green";
+        ctx.fillRect(204,450,20,60);
+  
+        //canvas6
+
+        ctx.font="20px tahoma";
+        ctx.fillStyle="black";
+        ctx.fillText("6.",330,380);
+
+        ctx.strokeStyle = "green";
+        ctx.lineWidth = 3;
+        ctx.strokeRect(400,370,170,150);
+	ctx.strokeRect(405,375,160,140);
+        ctx.strokeRect(410,380,150,130);
+	ctx.strokeRect(415,385,140,120);
+        ctx.strokeRect(420,390,130,110);
+	ctx.strokeRect(425,395,120,100);
+        ctx.strokeRect(430,400,110,90);
+	ctx.strokeRect(435,405,100,80);
+        ctx.strokeRect(440,410,90,70);
+	ctx.strokeRect(445,415,80,60);
+        ctx.strokeRect(450,420,70,50);
+	ctx.strokeRect(455,425,60,40);
+        ctx.strokeRect(460,430,50,30);
+	ctx.strokeRect(465,435,40,20);
+        ctx.strokeRect(470,440,30,10);
+	
+        
+
+        // canvas7
+
+        ctx.font="20px tahoma";
+        ctx.fillStyle="black";
+        ctx.fillText("7.",5,560);
+
+        ctx.beginPath();
+        ctx.arc(120,600,60,70,Math.PI,false);
+        ctx.fillStyle= "pink";
+        ctx.fill();
+
+        ctx.beginPath();
+        ctx.arc(190,700,60,180, 2*Math.PI,false);
+        ctx.fillStyle ="blue";
+        ctx.fill();
+        
+
+        // canvas8
+
+        ctx.font="20px tahoma";
+        ctx.fillStyle="black";
+        ctx.fillText("8.",328,560);
+
+     
+        
+       ctx.beginPath();
+       ctx.lineWidth= 1;
+       ctx.strokeStyle = "violet";
+       ctx.moveTo(360, 600);
+       ctx.lineTo(460, 550);
+       ctx.lineTo(560, 600);
+       ctx.closePath();
+       ctx.fillStyle ="brown";
+       ctx.fill();
+
+       ctx.fillStyle="blue";
+       ctx.fillRect(360,600,200,100)
+
+       ctx.fillStyle="white";
+       ctx.fillRect(370,645,30,60)
+
+       ctx.fillStyle="white";
+       ctx.fillRect(440,640,60,30)
+
+       ctx.beginPath();
+       ctx.arc(610,630,20,0,2*Math.PI);
+       ctx.fillStyle="green";
+       ctx.fill();
+
+       ctx.fillStyle="brown";
+       ctx.fillRect(606,649,10,50)
+
+       
+       
+              
+    </script>
+    
+    
+</body>
+</html>
