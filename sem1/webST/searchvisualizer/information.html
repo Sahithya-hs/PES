@@ -1,0 +1,106 @@
+<html> 
+    <head>
+        <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Search Visualizer</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="main">
+                <div class="logo">
+
+                </div>
+                <ul>
+                    <li class="active"><a href="home.html">Home</a></li>
+                    <li><a href="information.html">Information</a></li>
+                </ul>
+            </div>
+            </header>
+            <div align="center">
+            </br></br></br></br>
+                <h6> 
+                </br> SEARCH VISUALIZER </h6>
+            </br> </br></br></br>
+        </div>	
+        <h5>LINEAR SEARCH</h5>
+        <br> <br>
+            <section>
+                    
+                    
+                    Searching Algorithms are designed to check for an element or retrieve an element 
+                    from any data structure where it is stored. 
+                   
+                    A <b><em>linear search</em></b> is the simplest method of searching a data set.
+
+                    Starting at the beginning of the data set, each item of data is examined until a match is made. 
+                    Once the item is found, the search ends. If there is no match, the algorithm must deal with this.
+                    
+                    A written description algorithm for a linear search might be:
+                    
+                    Find out the length of the data set.
+                    Set counter to 0.
+                    Examine value held in the list at the counter position.
+                    Check to see if the value at that position matches the value searched for.
+                    If it matches, the value is found. Send a message and end the search.
+                    If not, increment the counter by 1 and go back to step 3 until there are no more items to search.
+                   
+                    <br><br><br>
+                    <h3>Algorithm </h3>
+                    Linear Search ( Array A, Value x) <br>
+
+                    Step 1: Set i to 1 <br>
+                    Step 2: if i > n then go to step 7 <br>
+                    Step 3: if A[i] = x then go to step 6 <br>
+                    Step 4: Set i to i + 1 <br>
+                    Step 5: Go to Step 2 <br>
+                    Step 6: Print Element x Found at index i and go to step 8 <br>
+                    Step 7: Print element not found <br>
+                    Step 8: Exit <br>
+                </section> 
+            
+            <br><br>
+
+            <h5>BINARY SEARCH</h5>
+        <br> <br>
+            <section>
+
+    
+                    <b><em>Binary search</em></b> is the search technique that works efficiently on sorted lists. Hence, to search an element
+                    into some list using the binary search technique, we must ensure that the list is sorted.
+
+                    Binary search follows the divide and conquer approach in which the list is divided into two halves, and the 
+                    item is compared with the middle element of the list. If the match is found then, the location of the
+                    middle element is returned. Otherwise, we search into either of the halves depending upon the result produced 
+                    through the match.
+
+                    There are two methods to implement the binary search algorithm -
+
+                    1) Iterative method
+                    2) Recursive method
+                    <br><br><br>
+                    <h3>Algorithm</h3>
+                        Step 1: set beg = lower_bound, end = upper_bound, pos = - 1  <br>
+                        Step 2: repeat steps 3 and 4 while beg<=end  <br>
+                        Step 3: set mid = (beg + end)/2  <br>
+                        Step 4: if a[mid] = val  <br>
+                        set pos = mid  <br>
+                        print pos  <br>
+                        go to step 6  <br>
+                        else if a[mid] > val  <br>
+                        set end = mid - 1  <br>
+                        else  <br>
+                        set beg = mid + 1  <br>
+                        [end of if]  <br>
+                        [end of loop]  <br>
+                        Step 5: if pos = -1    <br>
+                        print "value is not present in the array"  <br>
+                        [end of if]  <br>
+                        Step 6: exit  <br>
+                        <br>
+                   
+                </section>
+
+  
+
+ </body>
+</html>
